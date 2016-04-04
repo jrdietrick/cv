@@ -1,0 +1,60 @@
+\documentclass[10pt]{article}
+\usepackage{array, lipsum, CJKutf8, xcolor}
+\usepackage[margin=2.5cm]{geometry}
+
+\newcolumntype{L}{>{\raggedleft}p{0.12\textwidth}}
+\newcolumntype{R}{p{0.8\textwidth}}
+\newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
+\pagenumbering{gobble}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
+
+\vspace{0pt}
+\begin{center}
+    \flushleft
+    \begin{minipage}[b]{0.45\linewidth}
+        \vspace{0pt}
+        {\huge\textsc{John R Dietrick}}\\
+        80 Gulou E St, Dongcheng District\\
+        Beijing 100009, China\\
+        中国北京市东城区鼓楼东大街80号旁门
+    \end{minipage}
+    \begin{minipage}[b]{0.45\linewidth}
+        \vspace{0pt}
+        Citizenship: USA\\
+        Mobile: +86~186~0055~7450\\
+        Mail: \texttt{john@johndietrick.com}
+    \end{minipage}
+\end{center}
+
+\section*{Objective}
+\lipsum[66]
+
+\section*{Work Experience}
+\begin{tabular}{L!{\VRule}R}
+    2013~--~2016&{\bf Gather Health (Beijing, China)}\\
+    &Chief Technology Officer\\[10pt]
+    2012~--~2013&{\bf Synerchip (Beijing, China)}\\
+    &Software Engineer\\[10pt]
+    2011~--~2012&{\bf TrustGo Mobile (Beijing, China)}\\
+    &Software Engineer\\[10pt]
+    2009~--~2011&{\bf Microsoft (Redmond, WA, USA)}\\
+    &Software Development Engineer I, II
+\end{tabular}
+
+\section*{Education}
+\begin{tabular}{L!{\VRule}R}
+    2005~--~2009&{\bf University of Illinois Urbana-Champaign}\\
+    &B.S., Computer Engineering, with High Honors\\
+    &Minor, International Engineering, Chinese Concentration\\
+\end{tabular}
+
+\section*{Languages}
+\begin{tabular}{L!{\VRule}R}
+    English&Native\\
+    Mandarin&Professional working proficiency\\
+\end{tabular}
+
+\end{CJK}
+\end{document}
