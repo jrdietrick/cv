@@ -1,9 +1,10 @@
 \documentclass[10pt]{article}
-\usepackage{array, lipsum, CJKutf8, xcolor}
+\usepackage{array, enumitem, lipsum, CJKutf8, xcolor, pbox}
 \usepackage[margin=2.5cm]{geometry}
+\setlist{nosep}
 
-\newcolumntype{L}{>{\raggedleft}p{0.12\textwidth}}
-\newcolumntype{R}{p{0.8\textwidth}}
+\newcolumntype{L}{>{\raggedleft\centering}p{0.09\textwidth}}
+\newcolumntype{R}{p{0.88\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 \pagenumbering{gobble}
 
@@ -28,27 +29,110 @@
     \end{minipage}
 \end{center}
 
-\section*{Objective}
-\lipsum[66]
+\vspace{-6pt}
 
 \section*{Work Experience}
 \begin{tabular}{L!{\VRule}R}
-    2013~--~2016&{\bf Gather Health (Beijing, China)}\\
-    &Chief Technology Officer\\[10pt]
-    2012~--~2013&{\bf Synerchip (Beijing, China)}\\
-    &Software Engineer\\[10pt]
-    2011~--~2012&{\bf TrustGo Mobile (Beijing, China)}\\
-    &Software Engineer\\[10pt]
-    2009~--~2011&{\bf Microsoft (Redmond, WA, USA)}\\
-    &Software Development Engineer I, II
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2016/04}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2013/08}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf Gather Health (Beijing, China)} -- \textit{Chief Technology Officer}\\
+        \vspace{-8pt}
+        \begin{itemize}[leftmargin=16pt]
+            \item Nunc sed pede. Praesent vitae lectus. Praesent neque justo, vehicula eget, interdum id
+            \item Facilisis et, nibh. Phasellus at purus et libero lacinia dictum. Fusce aliquet. Nulla
+            \item Eu ante placerat leo semper dictum. Mauris metus. Curabitur lobortis. Curabitur
+            \item Sollicitudin hendrerit nunc. Donec ultrices lacus id ipsum. Nunc sed pede. Praesent
+            \item Vitae lectus. Praesent neque justo, vehicula eget, interdum id
+        \end{itemize}
+    }\\
+
+    \vspace{10pt}&\vspace{10pt}\\
+
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2013/07}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2012/06}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf Synerchip (Beijing, China)} -- \textit{Software Engineer}\\
+        \vspace{-8pt}
+        \begin{itemize}[leftmargin=16pt]
+            \item Responsible for leading architecture of the company's app middleware and core API platform
+            \item As-needed forays into client app development/debugging (PC, iOS, Android) and embedded development (MIPS, Linux)
+            \item Extensive travel (China domestic and abroad) to promote, develop, and support our products with customers and vendors
+        \end{itemize}
+    }\\
+
+    \vspace{10pt}&\vspace{10pt}\\
+
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2012/06}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2011/11}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf TrustGo Mobile (Beijing, China)} -- \textit{Software Engineer}\\
+        \vspace{-8pt}
+        \begin{itemize}[leftmargin=16pt]
+            \item Performance and accuracy improvements for the company's app search engine
+            \item Worked directly with the CEO to develop company's pitch to US investors
+        \end{itemize}
+    }\\
+
+    \vspace{10pt}&\vspace{10pt}\\
+
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2011/11}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2009/08}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf Microsoft (Redmond, WA, USA)} -- \textit{Software Development Engineer I, II}\\
+        \vspace{-8pt}
+        \begin{itemize}[leftmargin=16pt]
+            \item Driver development and maintenance for Windows Storage and Filesystems group
+            \item Kernel-mode: extensive development and debugging, primarily with NTFS and the Windows storage stack
+            \item User-mode: primary maintainer of Win32 filesystem APIs and Disk Defragmenter
+            \item 2010-2011: in addition to above, joined the core development team for Storage Spaces, introduced in Windows 8
+            % \item Prototyped, designed, and implemented two significant filesystem performance enhancements, in addition to completing scheduled work. Worked both from proof-of-concept through director approval.
+            % \item Received internal “Gold Star” award for performance.
+        \end{itemize}
+    }\\
+
+    \vspace{10pt}&\vspace{10pt}\\
+
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2007}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2005}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf Motorola (IL, USA)} -- \textit{Software Engineering Summer Intern}\\
+        Spent three summers in Motorola's Arlington Heights, IL office and Schaumburg, IL headquarters. Developed in ASP, C\#, and Java.
+    }\\
 \end{tabular}
+
+\vspace{-6pt}
 
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-    2005~--~2009&{\bf University of Illinois Urbana-Champaign}\\
-    &B.S., Computer Engineering, with High Honors\\
-    &Minor, International Engineering, Chinese Concentration\\
+    \parbox[t]{1.0\linewidth}{\centering
+        {\scriptsize 2009/05}\\
+        {\tiny \raisebox{.15em}{$\mid$}}\\
+        {\scriptsize 2005/08}
+    }&
+    \parbox[t]{1.0\linewidth}{
+        {\bf University of Illinois at Urbana-Champaign}\\
+        B.S., Computer Engineering -- High Honors (3.76/4.00)\\
+        Minor, International Engineering, Chinese Concentration
+    }\\
 \end{tabular}
+
+\vspace{-6pt}
 
 \section*{Languages}
 \begin{tabular}{L!{\VRule}R}
