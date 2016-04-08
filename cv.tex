@@ -26,8 +26,10 @@
         \vspace{0pt}
         {\huge\textsc{\fullName}}\\
         \englishAddressLineOne\\
-        \englishAddressLineTwo\\
-        \chineseAddress
+        \englishAddressLineTwo
+        \ifx\USAVERSION\undefined
+            \\\chineseAddress
+        \fi
     \end{minipage}
     \begin{minipage}[b]{0.45\linewidth}
         \vspace{0pt}

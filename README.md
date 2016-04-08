@@ -18,7 +18,7 @@ For Chinese (or other CJK) typeface support, also:
 
 Then, build with:
 
-    pdflatex cv.tex
+    make
 
 
 ## Credits
