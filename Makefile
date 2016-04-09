@@ -6,8 +6,14 @@ USAVERSIONOPTS = \def\USAVERSION{1}
 
 all: cv.pdf
 
-cv.pdf: cv.tex
+cv.pdf: cv.tex vc.aux
 	$(TEX) $(TEXOPTS) "\input{$<}"
 
-usa: cv.tex
+usa: cv.tex vc.aux
 	$(TEX) $(TEXOPTS) "$(USAVERSIONOPTS) \input{$<}"
+
+vc.aux: .git/logs/HEAD
+	echo "\\gdef\\GITHASH{`git describe --always --dirty="+"`}" >> vc.aux
+
+clean:
+	rm -f *.aux *.log

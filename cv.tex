@@ -2,7 +2,7 @@
 \usepackage{array, enumitem, lipsum, CJKutf8, xcolor, pbox, titlesec}
 \usepackage[margin=2.54cm]{geometry}
 \usepackage[yyyymmdd,hhmmss]{datetime}
-\setlist{nosep}
+\input{vc.aux}
 
 \newcolumntype{L}{>{\raggedleft\centering}p{0.09\textwidth}}
 \newcolumntype{R}{p{0.9\textwidth}}
@@ -10,6 +10,8 @@
 \pagenumbering{gobble}
 
 \titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+\setlist{nosep}
 
 \def\spaceBetweenExperienceEntries{\vspace{8pt}&\vspace{8pt}\\}
 \def\spaceBeforeExperienceBullets{\vspace{-10pt}}
@@ -159,7 +161,7 @@
     Mandarin&Professional working proficiency\\
 \end{tabular}
 
-\scriptsize\vfill\hfill github.com/jrdietrick/cv (\today~@~\currenttime)
+\tiny\vfill\hfill github.com/jrdietrick/cv~$\Vert$~\GITHASH~$\Vert$~\today~\currenttime
 
 \end{CJK}
 \end{document}
