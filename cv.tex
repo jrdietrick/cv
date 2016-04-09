@@ -1,15 +1,17 @@
 \documentclass[10pt]{article}
-\usepackage{array, enumitem, lipsum, CJKutf8, xcolor, pbox}
-\usepackage[margin=2.5cm]{geometry}
+\usepackage{array, enumitem, lipsum, CJKutf8, xcolor, pbox, titlesec}
+\usepackage[margin=2.54cm]{geometry}
 \setlist{nosep}
 
 \newcolumntype{L}{>{\raggedleft\centering}p{0.09\textwidth}}
-\newcolumntype{R}{p{0.88\textwidth}}
+\newcolumntype{R}{p{0.9\textwidth}}
 \newcommand\VRule{\color{lightgray}\vrule width 0.5pt}
 \pagenumbering{gobble}
 
-\begin{document}
-\begin{CJK}{UTF8}{gbsn}
+\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+
+\def\spaceBetweenExperienceEntries{\vspace{8pt}&\vspace{8pt}\\}
+\def\spaceBeforeExperienceBullets{\vspace{-10pt}}
 
 \def\fullName{John R Dietrick}
 \def\englishAddressLineOne{80 Gulou E St, Dongcheng District}
@@ -18,6 +20,9 @@
 \def\citizenship{USA}
 \def\mobileNumber{+86~186~0055~7450}
 \def\emailAddress{john@johndietrick.com}
+
+\begin{document}
+\begin{CJK}{UTF8}{gbsn}
 
 \vspace{0pt}
 \begin{center}
@@ -49,7 +54,7 @@
     }&
     \parbox[t]{1.0\linewidth}{
         {\bf Gather Health (Beijing, China)} -- \textit{Chief Technology Officer}\\
-        \vspace{-8pt}
+        \spaceBeforeExperienceBullets
         \begin{itemize}[leftmargin=16pt]
             \item Developed the first versions of Gather's apps and API backend (Python, Java), on the basis of which the company secured seed funding.
             \item Expanded the engineering organization (FTE and contractors) to a peak of 10, while growing the Beijing office to 20.
@@ -59,7 +64,7 @@
         \end{itemize}
     }\\
 
-    \vspace{10pt}&\vspace{10pt}\\
+    \spaceBetweenExperienceEntries
 
     \parbox[t]{1.0\linewidth}{
         {\scriptsize 2013/07}~--\\
@@ -67,7 +72,7 @@
     }&
     \parbox[t]{1.0\linewidth}{
         {\bf Synerchip (Beijing, China)} -- \textit{Software Engineer}\\
-        \vspace{-8pt}
+        \spaceBeforeExperienceBullets
         \begin{itemize}[leftmargin=16pt]
             \item Led design, review, and implementation of the company's middleware and API architecture.
             \item Developed a single cross-compiling middleware library (C++) to interface with client apps on Windows, Android, and iOS (x86, MIPS, and ARM platforms).
@@ -75,7 +80,7 @@
         \end{itemize}
     }\\
 
-    \vspace{10pt}&\vspace{10pt}\\
+    \spaceBetweenExperienceEntries
 
     \parbox[t]{1.0\linewidth}{
         {\scriptsize 2012/06}~--\\
@@ -83,14 +88,14 @@
     }&
     \parbox[t]{1.0\linewidth}{
         {\bf TrustGo Mobile (Beijing, China)} -- \textit{Software Engineer}\\
-        \vspace{-8pt}
+        \spaceBeforeExperienceBullets
         \begin{itemize}[leftmargin=16pt]
             \item Performance and accuracy improvements for the company's app search engine
             \item Worked directly with the CEO to develop company's pitch to US investors
         \end{itemize}
     }\\
 
-    \vspace{10pt}&\vspace{10pt}\\
+    \spaceBetweenExperienceEntries
 
     \parbox[t]{1.0\linewidth}{
         {\scriptsize 2011/11}~--\\
@@ -98,7 +103,7 @@
     }&
     \parbox[t]{1.0\linewidth}{
         {\bf Microsoft (Redmond, WA, USA)} -- \textit{Software Development Engineer I, II}\\
-        \vspace{-8pt}
+        \spaceBeforeExperienceBullets
         \begin{itemize}[leftmargin=16pt]
             % \item Driver development and maintenance for Windows Storage and Filesystems group
             \item Kernel-mode: Extensive development and debugging, primarily with NTFS and the Windows storage driver stack.
@@ -109,7 +114,7 @@
         \end{itemize}
     }\\
 
-    \vspace{10pt}&\vspace{10pt}\\
+    \spaceBetweenExperienceEntries
 
     \parbox[t]{1.0\linewidth}{
         {\scriptsize 2007}~--\\
