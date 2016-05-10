@@ -2,6 +2,7 @@
 \usepackage{array, enumitem, lipsum, CJKutf8, xcolor, pbox, titlesec}
 \usepackage[margin=2.54cm]{geometry}
 \usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage[colorlinks=false,allbordercolors={0 0 0},pdfborderstyle={/S/U/W 0.0}]{hyperref}
 \input{vc.aux}
 
 \newcolumntype{L}{>{\raggedleft\centering}p{0.09\textwidth}}
@@ -44,12 +45,12 @@
         \vspace{0pt}
         Citizenship: \citizenship\\
         Mobile: \mobileNumber\\
-        Mail: \texttt{\small\emailAddress}
+        Mail: \texttt{\small\href{mailto:\emailAddress}{\emailAddress}}
     \end{minipage}
     \begin{minipage}[b]{0.24\linewidth}
         \vspace{0pt}
-        \texttt{\small github.com/jrdietrick}\\
-        \texttt{\small cn.linkedin.com/in/jdietrick}
+        \texttt{\small\href{https://github.com/jrdietrick}{github.com/jrdietrick}}\\
+        \texttt{\small\href{https://linkedin.com/in/jdietrick}{linkedin.com/in/jdietrick}}
     \end{minipage}
 \end{center}
 
