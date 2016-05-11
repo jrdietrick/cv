@@ -4,9 +4,9 @@ USAVERSIONOPTS = \def\USAVERSION{1}
 
 .PHONY: cv.pdf all clean
 
-all: cv.pdf
+all: usa
 
-cv.pdf: cv.tex vc.aux
+international: cv.tex vc.aux
 	$(TEX) $(TEXOPTS) "\input{$<}"
 
 usa: cv.tex vc.aux
